@@ -9,10 +9,10 @@ export const APP_ROUTES: Routes = [
       import('./home/login/login.component').then((cmp) => cmp.LoginComponent),
   },
   {
-    path: 'create-user',
+    path: 'register',
     loadComponent: () =>
-      import('./home/create-user/create-user.component').then(
-        (cmp) => cmp.CreateUserComponent
+      import('./home/register/register.component').then(
+        (cmp) => cmp.RegisterComponent
       ),
   },
 
