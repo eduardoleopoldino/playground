@@ -21,7 +21,10 @@
     "useDefineForClassFields": false,
     "lib": ["ES2022", "dom"],
     "esModuleInterop": true,
-    "types": ["jest"]
+    "types": ["jest"],
+    "paths": {
+      "@env/*": ["./src/environments/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

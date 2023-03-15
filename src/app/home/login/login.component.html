@@ -24,7 +24,7 @@
                 </p>
               </div>
 
-              <form class="row g-3 needs-validation" novalidate>
+              <form class="row g-3 needs-validation" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                 <div class="col-12">
                   <label for="yourUsername" class="form-label">Username</label>
                   <div class="input-group has-validation">
@@ -37,6 +37,7 @@
                       class="form-control"
                       id="yourUsername"
                       required
+                      formControlName="email"
                     />
                     <div class="invalid-feedback">
                       Please enter your username.
@@ -52,6 +53,7 @@
                     class="form-control"
                     id="yourPassword"
                     required
+                    formControlName="password"
                   />
                   <div class="invalid-feedback">
                     Please enter your password!
